@@ -25,7 +25,7 @@ public class StudentController {
 
 	@RequestMapping("/getAll")
 	public String getAll(Model model) {
-		model.addAttribute("username", "Kindson");
+		model.addAttribute("username", "Omar");
 		List<Student> students = studentService.getAll();
 		model.addAttribute("students", students);
 		return "students";
